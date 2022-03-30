@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golang Final Project</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+  }
+
+  h1 {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 100px;
+    margin: 30px 0;
+  }
+
+  a{
+    height: 200px;
+    width: 200px;
+    text-align:center;
+    text-decoration:none;
+    font-family: 'Press Start 2P', cursive;
+    color:black;
+    background-color: white;
+    padding:20px; 
+    margin:10px;
+    border:none;
+    border-radius:7px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+a:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+a:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #000 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+a:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+  .area{
+    background: #fff;  
+    background: -webkit-linear-gradient(to left, #fff, #fff);  
+    width: 100%;
+    height:100%;  
+}
+
+.circles{
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles i{
+    position: absolute;
+    display: block;
+    list-style: none;
+    color:#fff;
+    font-size:1rem;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles i:nth-child(1){
+    left: 25%;
+    font-size:8px;
+    animation-delay: 0s;
+}
+
+
+.circles i:nth-child(2){
+    left: 10%;
+    font-size:8px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles i:nth-child(3){
+    left: 70%;
+   font-size:8px;
+    animation-delay: 4s;
+}
+
+.circles i:nth-child(4){
+    left: 40%;
+   font-size:8px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles i:nth-child(5){
+    left: 65%;
+   font-size:8px;
+    animation-delay: 0s;
+}
+
+.circles i:nth-child(6){
+    left: 75%;
+   font-size:8px;
+    animation-delay: 3s;
+}
+
+.circles i:nth-child(7){
+    left: 35%;
+    font-size:8px;
+    animation-delay: 7s;
+}
+
+.circles i:nth-child(8){
+    left: 50%;
+    font-size:8px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles i:nth-child(9){
+    left: 20%;
+   font-size:8px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles i:nth-child(10){
+    left: 85%;
+     font-size:8px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+  
+    </style>
+</head>
+<body>
+  
+    <h1>Quiz Mania</h1><br>
+
+    <div class="area" >
+        <div class="circles">
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i>                    
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i> 
+                <i class='bx bxs-circle' aria-hidden="true"></i>   
+        </div>
+    </div >
+    
+    <div>
+      <a href="/gk">General Knowledge</a>
+      <a href="/computer">Computer</a>
+      <a href="/science">Science</a><br><br><br><br>
+      <a href="/sports">Sports</a>
+      <a href="/geography">Geography</a>
+      <a href="/films">Films</a>
+    </div>
+
+   
+</body>
+</html>
